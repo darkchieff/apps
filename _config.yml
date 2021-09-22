@@ -1,1 +1,11 @@
 theme: jekyll-theme-cayman
+twitter:
+  username: darkchieff
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /img/sonic1.jpg
+        height: 630
+        width: 1200
