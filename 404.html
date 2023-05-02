@@ -34,7 +34,12 @@
     </section>
 </body>
 
-<audio controls autoplay hidden="" src="Betrayal.mp3" type ="audio/mp3"">your browser does not support Html5</audio>
+<p><audio id="loop-limited" controls="controls" autoplay style="width: 6em;height:20px;"><source src="Betrayal.mp3" type="audio/mp3" /><source src="Betrayal.ogg" type="audio/ogg" /></audio><br />
+<script>
+var loopLimit = 5;
+var loopCounter = 0;
+document.getElementById('loop-limited').addEventListener('ended', function(){if (loopCounter < loopLimit){this.currentTime = 0;this.play();loopCounter++;}
+}, false);</script></p>
 	
 	 <footer class="footer py-3">
     <div class="container">
